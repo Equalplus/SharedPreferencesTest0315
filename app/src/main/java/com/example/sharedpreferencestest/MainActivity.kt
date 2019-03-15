@@ -23,6 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.store)
         // Buttonがタップされた時の処理
-
+        button.setOnClickListener {
+            //テキストボックスに入力されている文字列
+            val inputText = editText.text.toString()
+            // Preferencesに保存する
+            pref.edit().putString("key", inputText).apply()
+        }
     }
 }
