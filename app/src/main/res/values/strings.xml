@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SharedPreferencesTest</string>
+    <string name="store">保存</string>
+</resources>
